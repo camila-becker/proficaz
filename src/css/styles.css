@@ -64,6 +64,10 @@ h2 {
   background-color: var(--color-first);
 }
 
+#servicos h2{
+  color: grey;
+}
+
 .icon {
   color: var(--color-zero);
   font-size: 5rem;
