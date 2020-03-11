@@ -39,7 +39,6 @@ h2 {
 
 .navbar-nav .nav-item .nav-link:hover {
   color: var(--color-first);
-  transform: scale(1.2);
 }
 
 .action {
