@@ -112,7 +112,7 @@ footer {
   padding: 40px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   #proficaz {
     margin-bottom: 280px;
   }
