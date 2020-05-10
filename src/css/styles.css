@@ -152,7 +152,6 @@ footer {
   #proficaz {
     padding-top: 0;
     height: 100vh;
-    margin-bottom: 540px;
   }
 
   #proficaz .equipe {
@@ -164,7 +163,7 @@ footer {
   }
 
   #servicos {
-    margin-top: 320px;
+    margin-top: 555px;
     height: 770px;
   }
 
@@ -174,7 +173,7 @@ footer {
 
   #contato {
     padding-top: 0;
-    margin-bottom: 50px
+    margin-bottom: 0 !important;
   }
 
   .navbar-nav .nav-item .nav-link:hover {
