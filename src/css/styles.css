@@ -17,6 +17,7 @@ h2 {
 .navbar {
   background-color: var(--color-third);
   box-shadow: 0 0.5rem 1rem var(--color-negative);
+  position: fixed;
 }
 
 .navbar .navbar-toggler {
@@ -76,16 +77,46 @@ h2 {
 }
 
 #proficaz {
-  height: 500px;
+  padding-top: 90px;
+  height: 80vh;
 }
 
 #proficaz .texto-sobre {
   margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#proficaz .equipe-title {
+  font-size: 2.4rem;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+#proficaz .equipe-title span {
+  color: var(--color-third);
+  border-bottom: 3px solid var(--color-first);
+}
+
+#proficaz .equipe .membro {
+  border: 2px dashed var(--color-first);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  background-color: transparent;
+  color: var(--color-third);
 }
 
 #servicos {
   background-color: var(--color-first);
   box-shadow: 0 0.5rem 1rem var(--color-negative);
+  margin-top: 400px;
+  height: 600px;
+}
+
+#servicos div {
+  margin-top: 150px;
 }
 
 .icon {
@@ -97,6 +128,11 @@ h2 {
 .modal-footer {
   background-color: var(--color-first);
   color: var(--color-zero);
+}
+
+#contato {
+  height: 600px;
+  padding-top: 120px;
 }
 
 form {
@@ -112,9 +148,32 @@ footer {
   padding: 40px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   #proficaz {
-    margin-bottom: 280px;
+    padding-top: 0;
+    height: 100vh;
+    margin-bottom: 580px;
+  }
+
+  #proficaz .equipe {
+    flex-direction: column;
+  }
+
+  #proficaz .equipe .membro {
+    font-size: 1.1rem;
+  }
+
+  #servicos {
+    margin-top: 320px;
+    height: 770px;
+  }
+
+  #servicos div {
+    margin-top: 20px;
+  }
+
+  #contato {
+    padding-top: 0;
   }
 
   .navbar-nav .nav-item .nav-link:hover {
