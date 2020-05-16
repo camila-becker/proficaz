@@ -48,11 +48,6 @@
                 >Serviços</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contato" onclick="hideMenu()"
-                >Contato</a
-              >
-            </li>
           </ul>
         </div>
       </nav>
@@ -132,46 +127,77 @@
     </section>
     <section id="servicos">
       <div class="row">
-        <div class="col-lg-4 text-center mt-4">
-          <i class="icon fas fa-hard-hat"></i>
+        <div class="col-lg-3 text-center mt-4">
+          <img
+            class="icones"
+            src="/src/img/IconeOptimization.png"
+            alt="Otimização com VBA"
+          />
           <h2 class="mb-3 mt-3">
-            <strong class="text-uppercase">gerenciamento de EPI's</strong>
+            <strong class="text-uppercase">Otimização com VBA</strong>
           </h2>
           <p>
             <button
               class="btn btn-outline-light"
               data-toggle="modal"
-              data-target="#epi"
+              data-target="#otimizacao"
             >
               Saiba mais
             </button>
           </p>
         </div>
-        <div class="col-lg-4 text-center mt-4">
-          <i class="icon fas fa-dollar-sign"></i>
+        <div class="col-lg-3 text-center mt-4">
+          <img
+            class="icones"
+            src="/src/img/IconeDashboard.png"
+            alt="Dashboards e Indicadores"
+          />
           <h2 class="mb-3 mt-3">
-            <strong class="text-uppercase">Orçamento de serviço</strong>
+            <strong class="text-uppercase">Dashboards/Indicadores</strong>
           </h2>
           <p>
             <button
               class="btn btn-outline-light"
               data-toggle="modal"
-              data-target="#orcamento"
+              data-target="#dashboard"
             >
               Saiba mais
             </button>
           </p>
         </div>
-        <div class="col-lg-4 text-center mt-4">
-          <i class="icon fas fa-shopping-cart"></i>
+        <div class="col-lg-3 text-center mt-4">
+          <img
+            class="icones"
+            src="/src/img/IconePropostaComercialForm.png"
+            alt="Formulários"
+          />
           <h2 class="mb-3 mt-3">
-            <strong class="text-uppercase">Acompanhamento de vendas</strong>
+            <strong class="text-uppercase">Formulários</strong>
           </h2>
           <p>
             <button
               class="btn btn-outline-light"
               data-toggle="modal"
-              data-target="#vendas"
+              data-target="#formularios"
+            >
+              Saiba mais
+            </button>
+          </p>
+        </div>
+        <div class="col-lg-3 text-center mt-4">
+          <img
+            class="icones"
+            src="/src/img/IconeVBA.png"
+            alt="Geração de Relatórios"
+          />
+          <h2 class="mb-3 mt-3">
+            <strong class="text-uppercase">Geração de relatórios</strong>
+          </h2>
+          <p>
+            <button
+              class="btn btn-outline-light"
+              data-toggle="modal"
+              data-target="#relatorios"
             >
               Saiba mais
             </button>
@@ -182,18 +208,18 @@
     <section id="modals">
       <div
         class="modal fade"
-        id="epi"
+        id="otimizacao"
         tabindex="-1"
         role="dialog"
-        aria-labelledby="label-epi"
+        aria-labelledby="label-otimizacao"
         aria-hidden="true"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="label-epi">
-                Gerenciamento de EPI's
-              </h5>
+              <h3 class="modal-title" id="label-otimizacao">
+                Otimização com VBA
+              </h3>
               <button
                 type="button"
                 class="close"
@@ -203,32 +229,12 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              <p>
-                Esta planilha de Gerenciamento de EPIs propicia o acompanhamento
-                da entrega de equipamentos para os colaboradores da empresa.
-              </p>
-              <p>De fácil uso, a ferramenta permite:</p>
-              <ul>
-                <li>Cadastro de colaboradores;</li>
-                <li>Cadastro de EPIs;</li>
-                <li>Registro de entrega de EPIs.</li>
-              </ul>
-              <p>O gerenciador ainda permite:</p>
-              <ul>
-                <li>Acompanhamento de histórico de entregas;</li>
-                <li>Impressão de ficha de entrega de EPIs;</li>
-                <li>Status de validade do EPI;</li>
-              </ul>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-outline-light"
-                data-dismiss="modal"
-              >
-                Fechar
-              </button>
+            <div class="modal-body m-auto">
+              <img
+                class="projetos"
+                src="/src/img/Site-OtimizacaoProcesso.png"
+                alt="Otimização com VBA"
+              />
             </div>
           </div>
         </div>
@@ -236,18 +242,18 @@
 
       <div
         class="modal fade"
-        id="orcamento"
+        id="dashboard"
         tabindex="-1"
         role="dialog"
-        aria-labelledby="label-orcamento"
+        aria-labelledby="label-dashboard"
         aria-hidden="true"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="label-orcamento">
-                Orçamento de Serviço
-              </h5>
+              <h3 class="modal-title" id="label-dashboard">
+                Dashboards / Indicadores
+              </h3>
               <button
                 type="button"
                 class="close"
@@ -257,34 +263,12 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              <p>
-                Planilha desenvolvida com exclusividade para facilitar a
-                proposta de orçamento para uma empresa de prestação de serviços
-                em telhados industriais.
-              </p>
-              <p>Com a ferramente é possível:</p>
-              <ul>
-                <li>Cadastrar equipamentos e materiais;</li>
-                <li>Definir produtividade de mão de obra e equipamentos;</li>
-                <li>Rendimento de materiais;</li>
-                <li>Definição de tipos de serviços;</li>
-              </ul>
-              <p>
-                Com base nestas informações, basta preencher o formulário de
-                orçamento para que a planilha calcule prazos, quantidade de
-                materiais e forneça os custos envolvidos e o lucro de cada
-                serviço.
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-outline-light"
-                data-dismiss="modal"
-              >
-                Fechar
-              </button>
+            <div class="modal-body m-auto">
+              <img
+                class="projetos"
+                src="/src/img/Site-Dashboard.png"
+                alt="Dashboard e indicadores"
+              />
             </div>
           </div>
         </div>
@@ -292,18 +276,18 @@
 
       <div
         class="modal fade"
-        id="vendas"
+        id="formularios"
         tabindex="-1"
         role="dialog"
-        aria-labelledby="label-vendas"
+        aria-labelledby="label-formularios"
         aria-hidden="true"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="label-vendas">
-                Acompanhamento de Vendas
-              </h5>
+              <h3 class="modal-title" id="label-formularios">
+                Formulários
+              </h3>
               <button
                 type="button"
                 class="close"
@@ -313,97 +297,70 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              <p>
-                Desenvolvida para registrar nº de visitas e vendas de uma equipe
-                comercial, esta ferramenta é focada em indicadores para avaliar
-                quais regiões e tipos de produtos necessitam maior atenção por
-                parte dos vendedores.
-              </p>
-              <p>A planilha conta com:</p>
-              <ul>
-                <li>Database de vendedores, regiões e produtos;</li>
-                <li>
-                  Histórico de visitas com número de pedidos e valor total
-                  vendido;
-                </li>
-                <li>
-                  Tabelas e gráficos do desempenho comercial ao longo do
-                  período.
-                </li>
-              </ul>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-outline-light"
-                data-dismiss="modal"
-              >
-                Fechar
-              </button>
+            <div class="modal-body m-auto">
+              <img
+                class="projetos"
+                src="/src/img/Site-PropostaComercialForm.png"
+                alt="Formulários"
+              />
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section id="contato" class="mt-5 mb-5">
-      <h1 class="text-center text-uppercase">
-        Contato
-      </h1>
-      <form class="mt-5">
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="nome">Nome</label>
-            <input
-              type="text"
-              class="form-control"
-              id="nome"
-              placeholder="Seu nome"
-            />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="telefone">Telefone</label>
-            <input
-              type="text"
-              class="form-control"
-              id="telefone"
-              placeholder="(00) 0 0000-0000"
-            />
+      <div
+        class="modal fade"
+        id="relatorios"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="label-relatorios"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="label-relatorios">
+                Geração de Relatórios
+              </h3>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Fechar"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body m-auto">
+              <img
+                class="projetos"
+                src="/src/img/Site-PropostaComercialVBA.png"
+                alt="Geração de Relatórios"
+              />
+            </div>
           </div>
         </div>
-        <div class="form-group">
-          <label for="mensagem">Mensagem</label>
-          <textarea
-            class="form-control"
-            name=""
-            id="mensagem"
-            cols="30"
-            rows="5"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-form">Enviar</button>
-      </form>
+      </div>
     </section>
 
     <footer>
       <img src="./src/img/logo-white-small.png" alt="Logo Proficaz" />
-      <div>
+      <div class="contatos">
         <a
-          class="pr-5"
+          class="pr-5 contato"
           href="https://www.instagram.com/proficaz/"
-          target="blank"
+          target="_blank"
         >
           <i class="fab fa-instagram fa-3x text-white"></i>
         </a>
         <a
           class="pr-5"
           href="https://api.whatsapp.com/send?phone=51985307354"
-          target="blank"
+          target="_blank"
         >
           <i class="fab fa-whatsapp fa-3x text-white"></i>
         </a>
-        <a href="https://www.facebook.com/proficazc" target="blank">
+        <a href="https://www.facebook.com/proficazc" target="_blank">
           <i class="fab fa-facebook-square fa-3x text-white"></i>
         </a>
       </div>
