@@ -145,6 +145,10 @@ footer .contatos a:hover {
     margin-bottom: 280px;
   }
 
+  .projetos {
+    width: 280px;
+  }
+  
   .navbar-nav .nav-item .nav-link:hover {
     color: var(--color-first);
     transform: none;
