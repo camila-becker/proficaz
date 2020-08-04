@@ -110,13 +110,21 @@ a:hover {
 }
 
 .projetos {
-  width: 750px;
+  width: 765px;
+}
+
+.dashboard{
+  width: 100vw;
 }
 
 .modal-header,
 .modal-footer {
   background-color: var(--color-first);
   color: var(--color-zero);
+}
+
+.modal-content{
+  background: #69ece8;
 }
 
 form {
@@ -141,12 +149,12 @@ footer .contatos a:hover {
 }
 
 @media (max-width: 700px) {
+
   #proficaz {
     margin-bottom: 280px;
   }
-
   .projetos {
-    width: 280px;
+    width: 436px;
   }
   
   .navbar-nav .nav-item .nav-link:hover {

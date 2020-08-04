@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./src/img/icon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./src/css/colors.css" />
-    <link rel="stylesheet" href="./src/css/styles.css" />
-    <link rel="stylesheet" href="./src/css/carousel.css" />
-    <title>Proficaz - Consultoria Empresarial</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">
-          <img src="./src/img/logo-white-small.png" alt="Logo Proficaz" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#menu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="hideMenu()">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#proficaz" onclick="hideMenu()"
-                >Proficaz</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#servicos" onclick="hideMenu()"
-                >Serviços</a
-              >
-            </li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./src/img/icon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./src/css/colors.css" />
+  <link rel="stylesheet" href="./src/css/styles.css" />
+  <link rel="stylesheet" href="./src/css/carousel.css" />
+  <title>Proficaz - Consultoria Empresarial</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="./src/img/logo-white-small.png" alt="Logo Proficaz" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="hideMenu()">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proficaz" onclick="hideMenu()">Proficaz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos" onclick="hideMenu()">Serviços</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="myCarousel1" class="mt-3 carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel1" data-slide-to="1"></li>
+      <li data-target="#myCarousel1" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-caption">
+          <h1 class="text-uppercase">Muitos dados para procurar no excel?</h1>
+          <p class="mt-5">
+            <img class="img-fluid" src="./src/img/carousel-1.png" alt="" />
+          </p>
+          <p>
+            <a class="mt-4 btn btn-lg action" href="#servicos">
+              Saiba mais
+            </a>
+          </p>
         </div>
-      </nav>
-    </header>
-    <div id="myCarousel" class="mt-3 carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+      </div>
+      <div class="carousel-item">
+        <div class="container">
           <div class="carousel-caption">
-            <h1 class="text-uppercase">Muitos dados para procurar no excel?</h1>
+            <h1 class="text-uppercase">Perdendo muito tempo com o excel?</h1>
             <p class="mt-5">
-              <img class="img-fluid" src="./src/img/carousel-1.png" alt="" />
+              <img class="img-fluid" src="./src/img/carousel-2.png" alt="" />
             </p>
             <p>
               <a class="mt-4 btn btn-lg action" href="#servicos">
@@ -71,322 +72,250 @@
             </p>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 class="text-uppercase">Perdendo muito tempo com o excel?</h1>
-              <p class="mt-5">
-                <img class="img-fluid" src="./src/img/carousel-2.png" alt="" />
-              </p>
-              <p>
-                <a class="mt-4 btn btn-lg action" href="#servicos">
-                  Saiba mais
-                </a>
-              </p>
-            </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="text-uppercase">Precisa visualizar indicadores?</h1>
+            <p class="mt-5">
+              <img class="img-fluid" src="./src/img/carousel-3.png" alt="" />
+            </p>
+            <p>
+              <a class="mt-4 btn btn-lg action" href="#servicos">
+                Saiba mais
+              </a>
+            </p>
           </div>
         </div>
       </div>
-      <a
-        class="carousel-control-prev"
-        href="#myCarousel"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Voltar</span>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel1" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Voltar</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel1" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Avançar</span>
+    </a>
+  </div>
+  <section id="proficaz">
+    <h1 class="text-center">
+      <img class="img-fluid pr-3 pl-3 mt-4" src="./src/img/logo-small.png" alt="" />
+    </h1>
+    <p class="texto-sobre">
+      A Proficaz Consultoria Empresarial nasceu com o objetivo de oferecer
+      soluções em Engenharia de Produção para micro e pequenas empresas da
+      região metropolitana de PortoAlegre. Notando a necessidade de
+      desenvolver ferramentas para facilitar o dia a dia dos clientes,
+      iniciamos o desenvolvimento de projetos voltados para planilhas de
+      Excel. Nossos projetos são voltados para a necessidade real do cliente,
+      personalizando cada ferramenta desenvolvida de modo a atender plenamente
+      suas exigências.
+    </p>
+  </section>
+  <section id="servicos">
+    <div class="row">
+      <div class="col-lg-3 text-center mt-4">
+        <img class="icones" src="/src/img/IconeOptimization.png" alt="Otimização com VBA" />
+        <h2 class="mb-3 mt-3">
+          <strong class="text-uppercase">Otimização com VBA</strong>
+        </h2>
+        <p>
+          <button class="btn btn-outline-light" data-toggle="modal" data-target="#otimizacao">
+            Saiba mais
+          </button>
+        </p>
+      </div>
+      <div class="col-lg-3 text-center mt-4">
+        <img class="icones" src="/src/img/IconeDashboard.png" alt="Dashboards e Indicadores" />
+        <h2 class="mb-3 mt-3">
+          <strong class="text-uppercase">Dashboards/Indicadores</strong>
+        </h2>
+        <p>
+          <button class="btn btn-outline-light" data-toggle="modal" data-target="#dashboard">
+            Saiba mais
+          </button>
+        </p>
+      </div>
+      <div class="col-lg-3 text-center mt-4">
+        <img class="icones" src="/src/img/IconePropostaComercialForm.png" alt="Formulários" />
+        <h2 class="mb-3 mt-3">
+          <strong class="text-uppercase">Formulários</strong>
+        </h2>
+        <p>
+          <button class="btn btn-outline-light" data-toggle="modal" data-target="#formularios">
+            Saiba mais
+          </button>
+        </p>
+      </div>
+      <div class="col-lg-3 text-center mt-4">
+        <img class="icones" src="/src/img/IconeVBA.png" alt="Geração de Relatórios" />
+        <h2 class="mb-3 mt-3">
+          <strong class="text-uppercase">Geração de relatórios</strong>
+        </h2>
+        <p>
+          <button class="btn btn-outline-light" data-toggle="modal" data-target="#relatorios">
+            Saiba mais
+          </button>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="modals">
+    <div class="modal fade" id="otimizacao" tabindex="-1" role="dialog" aria-labelledby="label-otimizacao"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="label-otimizacao">
+              Otimização com VBA
+            </h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body m-auto">
+            <p class="text-center" style="font-size: 1.25rem;">
+              Deixe que o Excel faça as tarefas repetitivas por você com o uso
+              do Visual Basic for Applications (VBA).
+            </p>
+            <img class="projetos" src="/src/img/Site-OtimizacaoProcesso.png" alt="Otimização com VBA" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="dashboard" tabindex="-1" role="dialog" aria-labelledby="label-dashboard"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="label-dashboard">
+              Dashboards / Indicadores
+            </h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel2" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item -modal active">
+                <div class="carousel-caption">
+                  <p class="text-center" style="color: #000;">
+                    Elaboração de dashboards com a ferramenta de análise de
+                    Big Data Microsoft Power BI.
+                  </p>
+                  <img class="img-fluid" src="./src/img/Projeto-BI.jpeg"
+                    alt="Exemplo de Projeto em Power BI" />
+                </div>
+              </div>
+              <div class="carousel-item -modal">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <p class="text-center" style="color: #000;">
+                      Elaboração de indicadores no Microsoft Excel para visualizar
+                      a performance do seu projeto/serviço ao mesmo tempo em que
+                      insere novos dados nas suas planilhas.
+                    </p>
+                    <img class="img-fluid" src="./src/img/Site-Dashboard.png"
+                      alt="Exemplo de dashboard" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Voltar</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Avançar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="formularios" tabindex="-1" role="dialog" aria-labelledby="label-formularios"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="label-formularios">
+              Formulários
+            </h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body m-auto">
+            <p class="text-center" style="font-size: 1.25rem;">
+              Preencha informações na sua planilha de modo mais prático com
+              o uso de formulários que te ajudam a selecionar
+              itens e impedem a inserção de dados incorretos.
+            </p>
+            <img class="projetos" src="/src/img/Site-PropostaComercialForm.png" alt="Formulários" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="relatorios" tabindex="-1" role="dialog" aria-labelledby="label-relatorios"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="label-relatorios">
+              Geração de Relatórios
+            </h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body m-auto">
+            <p class="text-center" style="font-size: 1.25rem;">
+              Com o uso de fórmulas avançadas e VBA, produza relatórios de forma
+              dinâmica e muito mais rápida.
+            </p>
+            <img class="projetos" src="/src/img/Site-PropostaComercialVBA.png" alt="Geração de Relatórios" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a class="navbar-brand" href="#">
+      <img src="./src/img/logo-white-small.png" alt="Logo Proficaz" />
+    </a>
+    <div class="contatos">
+      <a class="pr-5 contato" href="https://www.instagram.com/proficaz/" target="_blank">
+        <i class="fab fa-instagram fa-3x text-white"></i>
       </a>
-      <a
-        class="carousel-control-next"
-        href="#myCarousel"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Avançar</span>
+      <a class="pr-5" href="https://api.whatsapp.com/send?phone=51985307354" target="_blank">
+        <i class="fab fa-whatsapp fa-3x text-white"></i>
+      </a>
+      <a href="https://www.facebook.com/proficazc" target="_blank">
+        <i class="fab fa-facebook-square fa-3x text-white"></i>
       </a>
     </div>
-    <section id="proficaz">
-      <h1 class="text-center">
-        <img
-          class="img-fluid pr-3 pl-3 mt-4"
-          src="./src/img/logo-small.png"
-          alt=""
-        />
-      </h1>
-      <p class="texto-sobre">
-        A Proficaz Consultoria Empresarial nasceu com o objetivo de oferecer
-        soluções em Engenharia de Produção para micro e pequenas empresas da
-        região metropolitana de PortoAlegre. Notando a necessidade de
-        desenvolver ferramentas para facilitar o dia a dia dos clientes,
-        iniciamos o desenvolvimento de projetos voltados para planilhas de
-        Excel. Nossos projetos são voltados para a necessidade real do cliente,
-        personalizando cada ferramenta desenvolvida de modo a atender plenamente
-        suas exigências.
-      </p>
-    </section>
-    <section id="servicos">
-      <div class="row">
-        <div class="col-lg-3 text-center mt-4">
-          <img
-            class="icones"
-            src="/src/img/IconeOptimization.png"
-            alt="Otimização com VBA"
-          />
-          <h2 class="mb-3 mt-3">
-            <strong class="text-uppercase">Otimização com VBA</strong>
-          </h2>
-          <p>
-            <button
-              class="btn btn-outline-light"
-              data-toggle="modal"
-              data-target="#otimizacao"
-            >
-              Saiba mais
-            </button>
-          </p>
-        </div>
-        <div class="col-lg-3 text-center mt-4">
-          <img
-            class="icones"
-            src="/src/img/IconeDashboard.png"
-            alt="Dashboards e Indicadores"
-          />
-          <h2 class="mb-3 mt-3">
-            <strong class="text-uppercase">Dashboards/Indicadores</strong>
-          </h2>
-          <p>
-            <button
-              class="btn btn-outline-light"
-              data-toggle="modal"
-              data-target="#dashboard"
-            >
-              Saiba mais
-            </button>
-          </p>
-        </div>
-        <div class="col-lg-3 text-center mt-4">
-          <img
-            class="icones"
-            src="/src/img/IconePropostaComercialForm.png"
-            alt="Formulários"
-          />
-          <h2 class="mb-3 mt-3">
-            <strong class="text-uppercase">Formulários</strong>
-          </h2>
-          <p>
-            <button
-              class="btn btn-outline-light"
-              data-toggle="modal"
-              data-target="#formularios"
-            >
-              Saiba mais
-            </button>
-          </p>
-        </div>
-        <div class="col-lg-3 text-center mt-4">
-          <img
-            class="icones"
-            src="/src/img/IconeVBA.png"
-            alt="Geração de Relatórios"
-          />
-          <h2 class="mb-3 mt-3">
-            <strong class="text-uppercase">Geração de relatórios</strong>
-          </h2>
-          <p>
-            <button
-              class="btn btn-outline-light"
-              data-toggle="modal"
-              data-target="#relatorios"
-            >
-              Saiba mais
-            </button>
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="modals">
-      <div
-        class="modal fade"
-        id="otimizacao"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="label-otimizacao"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="label-otimizacao">
-                Otimização com VBA
-              </h3>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Fechar"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body m-auto">
-              <img
-                class="projetos"
-                src="/src/img/Site-OtimizacaoProcesso.png"
-                alt="Otimização com VBA"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+  </footer>
 
-      <div
-        class="modal fade"
-        id="dashboard"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="label-dashboard"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="label-dashboard">
-                Dashboards / Indicadores
-              </h3>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Fechar"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body m-auto">
-              <img
-                class="projetos"
-                src="/src/img/Site-Dashboard.png"
-                alt="Dashboard e indicadores"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+  <script src="./src/js/index.js"></script>
+  <script src="https://kit.fontawesome.com/4c603d4df3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
 
-      <div
-        class="modal fade"
-        id="formularios"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="label-formularios"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="label-formularios">
-                Formulários
-              </h3>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Fechar"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body m-auto">
-              <img
-                class="projetos"
-                src="/src/img/Site-PropostaComercialForm.png"
-                alt="Formulários"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="modal fade"
-        id="relatorios"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="label-relatorios"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="label-relatorios">
-                Geração de Relatórios
-              </h3>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Fechar"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body m-auto">
-              <img
-                class="projetos"
-                src="/src/img/Site-PropostaComercialVBA.png"
-                alt="Geração de Relatórios"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <a class="navbar-brand" href="#">
-        <img src="./src/img/logo-white-small.png" alt="Logo Proficaz" />
-      </a>
-      <div class="contatos">
-        <a
-          class="pr-5 contato"
-          href="https://www.instagram.com/proficaz/"
-          target="_blank"
-        >
-          <i class="fab fa-instagram fa-3x text-white"></i>
-        </a>
-        <a
-          class="pr-5"
-          href="https://api.whatsapp.com/send?phone=51985307354"
-          target="_blank"
-        >
-          <i class="fab fa-whatsapp fa-3x text-white"></i>
-        </a>
-        <a href="https://www.facebook.com/proficazc" target="_blank">
-          <i class="fab fa-facebook-square fa-3x text-white"></i>
-        </a>
-      </div>
-    </footer>
-
-    <script src="./src/js/index.js"></script>
-    <script
-      src="https://kit.fontawesome.com/4c603d4df3.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
